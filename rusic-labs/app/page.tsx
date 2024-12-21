@@ -6,6 +6,7 @@ import HeroSection from './HeroSection';
 import ProblemSection from './ProblemSection';
 import TransformationSection from './TransformationSection';
 import FeaturesSection from './FeaturesSection';
+import StepsSection from './StepsSection';
 import TestimonialsSection from './TestimonialsSection';
 import CaseStudiesSection from './CaseStudiesSection';
 import UseCasesSection from './UseCasesSection';
@@ -26,6 +27,7 @@ export default function Home() {
         <ProblemSection />
         <TransformationSection />
         <FeaturesSection />
+        <StepsSection />
         <TestimonialsSection />
         <CaseStudiesSection />
         <UseCasesSection />
