@@ -28,7 +28,7 @@ export default function Home() {
         <TransformationSection />
         <FeaturesSection />
         <StepsSection />
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
         <CaseStudiesSection />
         <UseCasesSection />
         <StatsSection />
