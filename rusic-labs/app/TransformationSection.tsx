@@ -19,6 +19,13 @@ export default function TransformationSection() {
           </p>
         </motion.div>
 
+        <section className="my-16">
+          <h2 className="text-4xl font-bold mb-6">Transform Your Business</h2>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Transform your business strategy with real-time market intelligence and actionable insights.
+          </p>
+        </section>
+
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {

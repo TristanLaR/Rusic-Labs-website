@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ChartBarIcon, LightBulbIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
+import { ChartBarIcon, LightBulbIcon, ShieldCheckIcon, AcademicCapIcon, Cog6ToothIcon, TrophyIcon } from '@heroicons/react/24/outline';
 
 export default function FeaturesSection() {
   const [featuresRef, featuresInView] = useInView({ triggerOnce: true });
 
   return (
-    <section ref={featuresRef} className="py-24 bg-white">
-      <div className="container mx-auto px-4">
+    <div>
+      <section ref={featuresRef} className="py-24 bg-white">
+        <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={featuresInView ? { opacity: 1, y: 0 } : {}}
@@ -53,5 +54,6 @@ export default function FeaturesSection() {
         </div>
       </div>
     </section>
+    </div>
   );
 }

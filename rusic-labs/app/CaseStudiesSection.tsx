@@ -56,6 +56,12 @@ export default function CaseStudiesSection() {
               <div className="text-sm text-primary-600 mb-2">{study.industry}</div>
               <h3 className="text-2xl font-bold mb-4 group-hover:text-primary-600 transition-colors">{study.title}</h3>
               <p className="text-gray-600 mb-6">{study.description}</p>
+              <div className="my-16">
+                <img src="/logos/client-logo.png" alt="Client Logo" className="h-8 mb-4" />
+                <ul>
+                  <li><strong>+40%</strong> conversion rate increase</li>
+                </ul>
+              </div>
               <div className="space-y-2">
                 {study.results.map((result, i) => (
                   <div key={i} className="flex items-center text-sm text-gray-600">

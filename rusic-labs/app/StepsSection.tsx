@@ -25,7 +25,7 @@ export default function StepsSection() {
   ];
 
   return (
-    <section ref={stepsRef} className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section ref={stepsRef} className="py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ export default function StepsSection() {
         </motion.div>
         <ul className="relative max-w-3xl mx-auto">
           {steps.map((step, index) => (
-            <li key={index} className="relative pl-24 pb-16 last:pb-0">
+            <li key={index} className="relative md:pl-24 pl-6 pb-16 last:pb-0">
               {/* Timeline line */}
               <div 
                 className={`absolute left-[31px] top-0 ${

@@ -111,6 +111,14 @@ export default function UseCasesSection() {
             </motion.div>
           ))}
         </div>
+
+        <div className="my-16">
+          <h3 className="text-2xl font-bold mb-2">Retail</h3>
+          <p className="text-gray-600 mb-4">
+            Achieved a 15% sales boost with on-demand competitor pricing data.
+          </p>
+          {/* ...similar layout for other industries... */}
+        </div>
       </div>
     </section>
   );

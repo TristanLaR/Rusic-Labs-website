@@ -21,11 +21,8 @@ export default function HeroSection() {
           Uncover insights that drive decisions, optimize strategies, and outpace the competition with our advanced market intelligence solutions.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-8 py-4 bg-white text-primary-900 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+          <button className="btn-primary">
             Request Free Consultation
-          </button>
-          <button className="px-8 py-4 border-2 border-white rounded-lg font-semibold hover:bg-white/10 transition-colors">
-            Learn More
           </button>
         </div>
         <div className="mt-12 text-sm text-gray-300">

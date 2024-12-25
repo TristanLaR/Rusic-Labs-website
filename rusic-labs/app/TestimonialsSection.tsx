@@ -20,48 +20,50 @@ export default function TestimonialsSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              quote: "Rusic Labs has revolutionized how we approach market analysis. Their real-time insights have helped us stay ahead of trends and make better decisions.",
-              author: "Sarah Chen",
-              position: "CEO",
-              company: "TechVision Global",
-              rating: 5
-            },
-            {
-              quote: "The competitor tracking feature has been invaluable. We've identified multiple opportunities and improved our market position significantly.",
-              author: "Michael Rodriguez",
-              position: "Marketing Director",
-              company: "Innovate Corp",
-              rating: 5
-            },
-            {
-              quote: "Their customer sentiment analysis has transformed our product development process. We now understand our customers better than ever.",
-              author: "Emily Thompson",
-              position: "Product Manager",
-              company: "NextGen Solutions",
-              rating: 5
-            }
-          ].map((testimonial, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="p-6 rounded-xl bg-white shadow-lg"
-            >
-              <div className="flex mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <StarIcon key={i} className="w-5 h-5 text-yellow-400" />
-                ))}
-              </div>
-              <p className="text-gray-600 mb-4 italic">"{testimonial.quote}"</p>
-              <div className="font-semibold">{testimonial.author}</div>
-              <div className="text-sm text-gray-500">{testimonial.position}</div>
-              <div className="text-sm text-primary-600">{testimonial.company}</div>
-            </motion.div>
-          ))}
+        <div className="carousel my-16">
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                quote: "Rusic Labs has revolutionized how we approach market analysis. Their real-time insights have helped us stay ahead of trends and make better decisions.",
+                author: "Sarah Chen",
+                position: "CEO",
+                company: "TechVision Global",
+                rating: 5
+              },
+              {
+                quote: "The competitor tracking feature has been invaluable. We've identified multiple opportunities and improved our market position significantly.",
+                author: "Michael Rodriguez",
+                position: "Marketing Director",
+                company: "Innovate Corp",
+                rating: 5
+              },
+              {
+                quote: "Their customer sentiment analysis has transformed our product development process. We now understand our customers better than ever.",
+                author: "Emily Thompson",
+                position: "Product Manager",
+                company: "NextGen Solutions",
+                rating: 5
+              }
+            ].map((testimonial, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
+                className="p-6 rounded-xl bg-white shadow-lg"
+              >
+                <div className="flex mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <StarIcon key={i} className="w-5 h-5 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-gray-600 mb-4 italic">"{testimonial.quote}"</p>
+                <div className="font-semibold">{testimonial.author}</div>
+                <div className="text-sm text-gray-500">{testimonial.position}</div>
+                <div className="text-sm text-primary-600">{testimonial.company}</div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
