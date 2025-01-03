@@ -78,21 +78,6 @@ export default function UseCasesSection() {
             </motion.div>
           ))}
         </div>
-
-        <div className="grid md:grid-cols-3 gap-8 text-center">
-          <div className="p-6">
-            <div className="text-4xl font-bold text-primary-400 mb-2">500+</div>
-            <div className="text-gray-300">Enterprise Clients</div>
-          </div>
-          <div className="p-6">
-            <div className="text-4xl font-bold text-primary-400 mb-2">98%</div>
-            <div className="text-gray-300">Retention Rate</div>
-          </div>
-          <div className="p-6">
-            <div className="text-4xl font-bold text-primary-400 mb-2">24/7</div>
-            <div className="text-gray-300">Expert Support</div>
-          </div>
-        </div>
       </div>
     </section>
   );
