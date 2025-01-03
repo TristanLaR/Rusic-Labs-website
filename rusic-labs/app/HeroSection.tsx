@@ -18,7 +18,7 @@ export default function HeroSection() {
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-400"> Real-Time Intelligence</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-200">
-          Uncover insights that drive decisions, optimize strategies, and outpace the competition with our advanced market intelligence solutions.
+        Unlock data-driven strategies to optimize decisions and outpace competitors.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="btn-primary">

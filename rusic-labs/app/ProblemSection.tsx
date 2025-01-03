@@ -16,13 +16,8 @@ export default function ProblemSection() {
         >
           <h2 className="text-4xl font-display font-bold mb-4">The Cost of Staying in the Dark</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Lost opportunities. Outdated strategies. Each day without real-time intel widens the gap between you and the competition.
+            Outdated strategies lead to lost opportunities. Stay ahead with real-time insights.
           </p>
-          <ul className="text-xl text-gray-600 max-w-2xl mx-auto">
-            <li><strong>Wasted Resources</strong> – Higher costs, slower growth</li>
-            <li><strong>Hidden Risks</strong> – Decisions made on guesswork</li>
-            <li><strong>Falling Behind</strong> – Competitors gain an edge</li>
-          </ul>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">

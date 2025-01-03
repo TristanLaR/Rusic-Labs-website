@@ -26,7 +26,7 @@ export default function FeaturesSection() {
             {
               icon: ChartBarIcon,
               title: "Market Trends Analysis",
-              description: "Stay ahead with real-time market insights and predictive analytics"
+              description: "Stay ahead with real-time market shifts."
             },
             {
               icon: LightBulbIcon,
@@ -36,7 +36,7 @@ export default function FeaturesSection() {
             {
               icon: ShieldCheckIcon,
               title: "Customer Sentiment Analysis",
-              description: "Understand your customers better with AI-powered sentiment analysis"
+              description: "Understand your market better with AI-powered sentiment analysis"
             }
           ].map((feature, index) => (
             <motion.div
