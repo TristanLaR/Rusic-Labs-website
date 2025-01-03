@@ -12,6 +12,7 @@ import CaseStudiesSection from './CaseStudiesSection';
 import UseCasesSection from './UseCasesSection';
 import StatsSection from './StatsSection';
 import CTASection from './CTASection';
+import NavBar from './NavBar';
 import Head from 'next/head';
 
 export default function Home() {
@@ -23,16 +24,33 @@ export default function Home() {
         <meta name="keywords" content="market intelligence, data analysis, competitor tracking, business intelligence, real-time analytics, data-driven decisions, market trends analysis" />
       </Head>
       <main className="min-h-screen">
-        <HeroSection />
-        <ProblemSection />
+        <NavBar />
+        <section id="hero">
+          <HeroSection />
+        </section>
+        <section id="problem">
+          <ProblemSection />
+        </section>
         {/* <TransformationSection /> */}
-        <FeaturesSection />
-        <StepsSection />
+        <section id="features">
+          <FeaturesSection />
+        </section>
+        <section id="steps">
+          <StepsSection />
+        </section>
         {/* <TestimonialsSection /> */}
-        <CaseStudiesSection />
-        <UseCasesSection />
-        <StatsSection />
-        <CTASection />
+        <section id="case-studies">
+          <CaseStudiesSection />
+        </section>
+        <section id="use-cases">
+          <UseCasesSection />
+        </section>
+        <section id="stats">
+          <StatsSection />
+        </section>
+        <section id="cta">
+          <CTASection />
+        </section>
       </main>
     </>
   );
