@@ -17,9 +17,6 @@ export default function HeroSection() {
           Empower Your Business with
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-400"> Real-Time Intelligence</span>
         </h1>
-        <h2 className="text-2xl md:text-3xl mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-teal-200">
-          Turn Complex Data into Clear, Actionable Insights
-        </h2>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-200">
           Unlock data-driven strategies to optimize decisions and outpace competitors.
         </p>
@@ -33,9 +30,9 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-teal-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </motion.button>
         </div>
-        <div className="mt-12 text-sm text-gray-300">
+        {/* <div className="mt-12 text-sm text-gray-300">
           Trusted by over 100 leading businesses globally | Rated 4.9/5 for actionable insights
-        </div>
+        </div> */}
       </motion.div>
     </section>
   );
